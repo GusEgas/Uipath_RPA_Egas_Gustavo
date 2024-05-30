@@ -207,6 +207,6 @@
         </Sequence>
       </ui:InterruptibleDoWhile.Body>
     </ui:InterruptibleDoWhile>
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="582,107" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="Info" Message="[&quot;Ingreso de correo exitoso:&quot;+ ingresoCorreo]" />
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="582,107" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="Info" Message="[&quot;Ingreso de correo exitoso:&quot;+ ingresoCorreo + &quot;,Fin InputParameters&quot;]" />
   </Sequence>
 </Activity>
