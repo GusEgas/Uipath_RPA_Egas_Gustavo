@@ -9,7 +9,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1049,3749</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1050,3749</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>InputParameters_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -71,6 +71,7 @@
       <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
       <AssemblyReference>System.ServiceModel</AssemblyReference>
       <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
   <Sequence DisplayName="InputParameters" sap:VirtualizedContainerService.HintSize="644,3684" sap2010:WorkflowViewState.IdRef="Sequence_1">
@@ -162,7 +163,7 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
           </ui:InputDialog>
-          <Assign sap2010:Annotation.AnnotationText="validacion de mail mediante expresiones regulares." DisplayName="Asignar" sap:VirtualizedContainerService.HintSize="484,113" sap2010:WorkflowViewState.IdRef="Assign_2">
+          <Assign sap2010:Annotation.AnnotationText="validacion de mail mediante expresiones regulares" DisplayName="Asignar" sap:VirtualizedContainerService.HintSize="484,113" sap2010:WorkflowViewState.IdRef="Assign_2">
             <Assign.To>
               <OutArgument x:TypeArguments="x:String">[validacionCorreo]</OutArgument>
             </Assign.To>

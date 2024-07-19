@@ -6,7 +6,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1049,1056</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1050,1056</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ProcessExcelData_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -89,6 +89,7 @@
       <AssemblyReference>NPOI</AssemblyReference>
       <AssemblyReference>System.ServiceModel</AssemblyReference>
       <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
   <Sequence DisplayName="ProcessExcelData" sap:VirtualizedContainerService.HintSize="512,991" sap2010:WorkflowViewState.IdRef="Sequence_1">
@@ -115,7 +116,7 @@
         </ActivityAction>
       </ui:ExcelApplicationScope.Body>
     </ui:ExcelApplicationScope>
-    <ui:ReadCell sap2010:Annotation.AnnotationText="lee la celda oculta que identifica el conteo del numero de contactos consultados en la guia telefonica." Cell="E7" DisplayName="Leer celda de validacion de numero de contactos" sap:VirtualizedContainerService.HintSize="450,130" sap2010:WorkflowViewState.IdRef="ReadCell_1" SheetName="POBLACION" WorkbookPath="ContactosApellido.xlsm">
+    <ui:ReadCell sap2010:Annotation.AnnotationText="lee la celda oculta que identifica el conteo del numero de contactos consultados en la guia telefonica" Cell="E7" DisplayName="Leer celda de validacion de numero de contactos" sap:VirtualizedContainerService.HintSize="450,130" sap2010:WorkflowViewState.IdRef="ReadCell_1" SheetName="POBLACION" WorkbookPath="ContactosApellido.xlsm">
       <ui:ReadCell.Result>
         <OutArgument x:TypeArguments="x:Double">[numContactos]</OutArgument>
       </ui:ReadCell.Result>
