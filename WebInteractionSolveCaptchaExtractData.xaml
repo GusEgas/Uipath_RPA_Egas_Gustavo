@@ -13,7 +13,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1050,5091</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1049,5089</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>WebInteraction_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -104,10 +104,9 @@
       <AssemblyReference>System.ServiceModel</AssemblyReference>
       <AssemblyReference>NPOI</AssemblyReference>
       <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
-      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="WebInteraction" sap:VirtualizedContainerService.HintSize="655,5026" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="WebInteraction" sap:VirtualizedContainerService.HintSize="655,5024" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="ui:UiElement" Name="Navegador" />
     </Sequence.Variables>
@@ -124,13 +123,13 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:ReadTextFile>
-    <uix:NApplicationCard WebDriverMode="{x:Null}" sap2010:Annotation.AnnotationText="ingreso a la url de cnt de guia contactos" AttachMode="ByInstance" DisplayName="Utilizar Navegador Chrome: :: Guía Telefónica CNT EP ::" sap:VirtualizedContainerService.HintSize="593,4494" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="06de18cc-df17-4560-b8b8-6b6f677901e5" UserDataFolderMode="DefaultFolder" Version="V2">
+    <uix:NApplicationCard WebDriverMode="{x:Null}" sap2010:Annotation.AnnotationText="ingreso a la url de cnt de guia contactos" AttachMode="ByInstance" DisplayName="Utilizar Navegador Chrome: :: Guía Telefónica CNT EP ::" sap:VirtualizedContainerService.HintSize="593,4492" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="06de18cc-df17-4560-b8b8-6b6f677901e5" UserDataFolderMode="DefaultFolder" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Hacer" sap:VirtualizedContainerService.HintSize="559,4246" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Hacer" sap:VirtualizedContainerService.HintSize="559,4244" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <Sequence.Variables>
               <Variable x:TypeArguments="sd:DataTable" Name="borrarCeldas" />
               <Variable x:TypeArguments="x:String" Name="numContactosTextoMail" />
@@ -233,7 +232,7 @@
                 </sap:WorkflowViewStateService.ViewState>
               </uix:NGetText>
             </Sequence>
-            <Switch x:TypeArguments="x:String" DisplayName="Cambiar texto capcha" Expression="[captcha]" sap:VirtualizedContainerService.HintSize="497,514" sap2010:WorkflowViewState.IdRef="Switch`1_1">
+            <Switch x:TypeArguments="x:String" DisplayName="Cambiar texto capcha" Expression="[captcha]" sap:VirtualizedContainerService.HintSize="497,510" sap2010:WorkflowViewState.IdRef="Switch`1_1">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -524,7 +523,7 @@
               </sap:WorkflowViewStateService.ViewState>
             </ui:WriteRange>
             <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="497,107" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Warn" Message="[&quot;Encera el excel para nuevas consultas, inicia la extraccion de datos de la tabla&quot;]" />
-            <Sequence DisplayName="Secuencia extraccion consulta de datos " sap:VirtualizedContainerService.HintSize="497,301" sap2010:WorkflowViewState.IdRef="Sequence_23">
+            <Sequence DisplayName="Secuencia extraccion consulta de datos " sap:VirtualizedContainerService.HintSize="497,303" sap2010:WorkflowViewState.IdRef="Sequence_23">
               <Sequence.Variables>
                 <Variable x:TypeArguments="x:String" Name="variable1" />
               </Sequence.Variables>
@@ -533,7 +532,7 @@
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <uix:NExtractData sap2010:Annotation.AnnotationText="Extrae datos de 10 pagina y si no existe no extrae nada" AppendResults="False" ContinueOnError="True" DataTable="[ExtractDataTable]" DisplayName="Extraer datos de tabla" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Table'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column-0' ReferenceIdx='0' Name='Column-0'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column-1' ReferenceIdx='1' Name='Column-1'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column-2' ReferenceIdx='2' Name='Column-2'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column-3' ReferenceIdx='3' Name='Column-3'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataNextLink' /&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract-table get_columns_name='1' get_empty_columns='0' columns_name_source='Longest'&gt;&lt;column name='Column-0' attr='text' /&gt;&lt;column name='Column-1' attr='text' /&gt;&lt;column name='Column-2' attr='text' /&gt;&lt;column name='Column-3' attr='text' /&gt;&lt;/extract-table&gt;" sap:VirtualizedContainerService.HintSize="388,188" sap2010:WorkflowViewState.IdRef="NExtractData_1" LimitExtractionTo="Page" MaximumResults="10" ScopeIdentifier="06de18cc-df17-4560-b8b8-6b6f677901e5" Version="V1">
+              <uix:NExtractData sap2010:Annotation.AnnotationText="Extrae datos de 10 paginas y si no existe no extrae nada" AppendResults="False" ContinueOnError="True" DataTable="[ExtractDataTable]" DisplayName="Extraer datos de tabla" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Table'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column-0' ReferenceIdx='0' Name='Column-0'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column-1' ReferenceIdx='1' Name='Column-1'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column-2' ReferenceIdx='2' Name='Column-2'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column-3' ReferenceIdx='3' Name='Column-3'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataNextLink' /&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract-table get_columns_name='1' get_empty_columns='0' columns_name_source='Longest'&gt;&lt;column name='Column-0' attr='text' /&gt;&lt;column name='Column-1' attr='text' /&gt;&lt;column name='Column-2' attr='text' /&gt;&lt;column name='Column-3' attr='text' /&gt;&lt;/extract-table&gt;" sap:VirtualizedContainerService.HintSize="388,188" sap2010:WorkflowViewState.IdRef="NExtractData_1" LimitExtractionTo="Page" MaximumResults="10" ScopeIdentifier="06de18cc-df17-4560-b8b8-6b6f677901e5" Version="V1">
                 <uix:NExtractData.NextLink>
                   <uix:TargetAnchorable BrowserURL="https://micnt.com.ec/cntapp/guia104/php/guia_cntat.php?paginas=1&amp;cmbprov2=2&amp;cmbcriterio=3&amp;txtusuarioapellido=SILVA&amp;txtusuarionombre=&amp;hflagsubmit=1" DesignTimeRectangle="1287, 866, 14, 14" ElementType="Icon" FriendlyName="'IMG'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;table' idx='2' tag='TABLE' /&gt;&lt;webctrl tableRow='1' tag='IMG' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='IMG' class='' aaname='Ir Página Siguiente' /&gt;" Guid="afc810e1-d8ed-4482-b655-fde27c0bf8db" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABrSURBVDhPY/hPJTBiDfp0////n++hHPwAv0FP9///v0afKMMIGzQTqIQIw4gziAjDiDeIgGGkGQTC99dDJVEBaQbdnA+VwATEG4THEBAgziAChoAAYYOIMAQE8BtEAhiEBjU0NPynHDf8BwBu7c86E0pEKwAAAABJRU5ErkJggg==" ScopeSelectorArgument="&lt;html app='chrome.exe' title=':: Guía Telefónica CNT EP ::' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive" />
                 </uix:NExtractData.NextLink>
